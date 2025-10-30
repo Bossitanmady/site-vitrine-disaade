@@ -1,5 +1,6 @@
 import React from 'react';
 import '../static/Applications.css';
+import '../assets/logo2.jpg';
 
 function Applications() {
   return (
@@ -95,7 +96,7 @@ function Applications() {
                 <div className="phone-notch"></div>
                 <div className="phone-content">
                   <div className="mobile-header">
-                    <img src="/logo2.jpg" alt="DISAADE" className="mobile-logo" />
+                    <img src={logoImage} alt="DISAADE" className="mobile-logo" />
                     <span>DISAADE</span>
                   </div>
                   <div className="mobile-stats">
