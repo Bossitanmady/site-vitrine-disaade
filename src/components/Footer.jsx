@@ -1,5 +1,6 @@
 import React from 'react';
 import '../static/Footer.css';
+import logoImage from '../assets/logo2.jpg'; // Assurez-vous que le logo est dans le bon dossier
 
 function Footer() {
   const scrollToSection = (id) => {
@@ -16,7 +17,7 @@ function Footer() {
         <div className="footer-content">
           <div className="footer-brand">
             <div className="footer-logo">
-              <img src="/logo2.jpg" alt="DISAADE Logo" />
+              <img src={logoImage} alt="DISAADE Logo" />
               <span>DISAADE</span>
             </div>
             <p className="footer-tagline">
