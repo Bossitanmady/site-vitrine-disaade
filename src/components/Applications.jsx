@@ -1,5 +1,5 @@
 import React from 'react';
-import './Applications.css';
+import '../static/Applications.css';
 
 function Applications() {
   return (
@@ -8,11 +8,7 @@ function Applications() {
         <div className="applications-header">
           <h2 className="section-title">
             <span className="title-accent">Applications</span>
-            <span className="title-main">Connectés où que vous soyez</span>
           </h2>
-          <p className="section-description">
-            Deux applications complémentaires pour une communication optimale entre tous les acteurs
-          </p>
         </div>
 
         <div className="applications-grid">

@@ -1,5 +1,5 @@
 import React from 'react';
-import './Footer.css';
+import '../static/Footer.css';
 
 function Footer() {
   const scrollToSection = (id) => {
@@ -20,7 +20,7 @@ function Footer() {
               <span>DISAADE</span>
             </div>
             <p className="footer-tagline">
-              La couveuse néonatale intelligente pour des soins optimaux aux bébés prématurés
+              La couveuse néonatale connectée pour des soins optimaux aux bébés prématurés
             </p>
             <div className="footer-social">
               <a href="#" className="social-link" aria-label="Facebook">
@@ -50,7 +50,7 @@ function Footer() {
             <div className="footer-column">
               <h4>Navigation</h4>
               <ul>
-                <li><a onClick={scrollToTop}>Accueil</a></li>
+                <li><a onClick={() => scrollToTop('hero')}>Accueil</a></li>
                 <li><a onClick={() => scrollToSection('about')}>À propos</a></li>
                 <li><a onClick={() => scrollToSection('features')}>Fonctionnalités</a></li>
                 <li><a onClick={() => scrollToSection('applications')}>Applications</a></li>

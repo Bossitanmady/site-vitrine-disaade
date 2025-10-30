@@ -1,5 +1,5 @@
 import React from 'react';
-import './Contact.css';
+import '../static/Contact.css';
 
 function Contact() {
   return (
@@ -8,8 +8,7 @@ function Contact() {
         <div className="contact-content">
           <div className="contact-info">
             <h2 className="section-title">
-              <span className="title-accent">Contact</span>
-              <span className="title-main">Parlons de votre projet</span>
+              <span className="title-accent">Contactez - Nous</span>
             </h2>
             <p className="section-description">
               Vous souhaitez en savoir plus sur DISAADE ou discuter d'une collaboration ?
@@ -25,7 +24,7 @@ function Contact() {
                 </div>
                 <div className="method-text">
                   <h4>Email</h4>
-                  <a href="mailto:contact@disaade.com">contact@disaade.com</a>
+                  <a href="mailto:disaade@gmail.com">disaade@gmail.com</a>
                 </div>
               </div>
 
@@ -37,7 +36,7 @@ function Contact() {
                 </div>
                 <div className="method-text">
                   <h4>Téléphone</h4>
-                  <a href="tel:+33123456789">+33 1 23 45 67 89</a>
+                  <a href="tel:+224610345704">+224 610 34 57 04</a>
                 </div>
               </div>
 
@@ -50,7 +49,7 @@ function Contact() {
                 </div>
                 <div className="method-text">
                   <h4>Adresse</h4>
-                  <p>Paris, France</p>
+                  <p>Conakry, Guinée</p>
                 </div>
               </div>
             </div>

@@ -1,5 +1,5 @@
 import React from 'react';
-import './Features.css';
+import '../static/Features.css';
 
 function Features() {
   const features = [
@@ -65,11 +65,10 @@ function Features() {
         <div className="features-header">
           <h2 className="section-title">
             <span className="title-accent">Fonctionnalités</span>
-            <span className="title-main">Une technologie au service de la vie</span>
           </h2>
           <p className="section-description">
             DISAADE combine innovation technologique et expertise médicale pour offrir un environnement
-            optimal aux bébés prématurés
+            optimal  aux bébés prématurés et ceux à faibles poids.
           </p>
         </div>
         <div className="features-grid">
@@ -81,6 +80,7 @@ function Features() {
             </div>
           ))}
         </div>
+        <p style={{ textAlign: 'center', fontSize: '20px', color: ' #015268' }}>Une solution technologique au service de la vie, avec DISAADE vous donnez la vie nous la protégeons.</p>
       </div>
     </section>
   );

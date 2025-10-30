@@ -1,0 +1,175 @@
+:root {
+  --primary-color: #015268;
+  --secondary-color: #c97a84;
+  --text-light: #ffffff;
+  --text-dark: #1a1a1a;
+  --bg-light: #fdfdfd;
+  --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* --- Section Features --- */
+.features {
+  background: var(--bg-light);
+  padding: 60px 20px 100px; /* réduit l'espace avec la section précédente */
+}
+
+.features-header {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 60px;
+}
+
+.section-title {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-weight: 800;
+}
+
+.title-accent {
+  font-size: 36px;
+  color: var(--secondary-color);
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+}
+
+.title-main {
+  font-size: 36px;
+  color: var(--primary-color);
+  line-height: 1;
+}
+
+.section-description {
+  font-size: 16px;
+  color: var(--text-dark);
+  opacity: 0.85;
+  margin-top: 10px;
+}
+
+/* --- Grid Features --- */
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  justify-items: center; /* centre horizontalement les cartes */
+}
+
+/* --- Feature Card --- */
+.feature-card {
+  background: var(--text-light);
+  padding: 40px 30px;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* centre le contenu de la carte */
+  text-align: center; /* centre le texte à l'intérieur */
+}
+
+.feature-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease;
+}
+
+.feature-card:hover::before {
+  transform: scaleX(1);
+}
+
+.feature-card:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-lg);
+  border-color: var(--primary-color);
+}
+
+/* --- Feature Icon --- */
+.feature-icon {
+  width: 64px;
+  height: 64px;
+  background: linear-gradient(135deg, var(--primary-color), #013947);
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center; /* centre horizontal et vertical */
+  margin-bottom: 24px;
+  color: var(--text-light);
+  transition: all 0.3s ease;
+}
+
+.feature-card:hover .feature-icon {
+  background: linear-gradient(135deg, var(--secondary-color), #b56872);
+  transform: scale(1.1) rotate(5deg);
+}
+
+.feature-icon svg {
+  width: 32px;
+  height: 32px;
+}
+
+/* --- Feature Text --- */
+.feature-title {
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--primary-color);
+  margin-bottom: 16px;
+  line-height: 1.3;
+}
+
+.feature-description {
+  font-size: 16px;
+  line-height: 1.7;
+  color: var(--text-dark);
+  opacity: 0.8;
+}
+
+/* --- Responsive --- */
+@media (max-width: 1024px) {
+  .section-title .title-main {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 768px) {
+  .features {
+    padding: 50px 20px 80px; /* padding-top réduit sur mobile */
+  }
+
+  .features-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    justify-items: center;
+  }
+
+  .feature-card {
+    padding: 30px 24px;
+  }
+
+  .feature-icon {
+    width: 56px;
+    height: 56px;
+  }
+
+  .feature-icon svg {
+    width: 28px;
+    height: 28px;
+  }
+
+  .feature-title {
+    font-size: 20px;
+  }
+
+  .feature-description {
+    font-size: 15px;
+  }
+}
