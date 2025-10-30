@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-import incubatorImage from "../assets/incubateur1.png"; // Assure-toi que l’image est dans src/assets
+import incubatorImage from "../assets/incubateur1.png"; // L'image de la couveuse
+import logoImage from "../assets/logo2.jpg"; // Déplace ton logo dans src/assets
 import "../static/Hero.css";
 
 function Hero() {
@@ -8,9 +9,7 @@ function Hero() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   useEffect(() => {
-    const handleScroll = () => {
-      setScrolled(window.scrollY > 50);
-    };
+    const handleScroll = () => setScrolled(window.scrollY > 50);
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
@@ -25,8 +24,10 @@ function Hero() {
       <nav className={`navbar ${scrolled ? "scrolled" : ""}`}>
         <div className="nav-container">
           <div className="logo" onClick={() => scrollToSection("hero")}>
-            <img src="/logo2.jpg" alt="DISAADE Logo" />
-            <span role="button" tabIndex="0" onClick={() => scrollToSection("hero")}>DISAADE</span>
+            <img src={logoImage} alt="DISAADE Logo" />
+            <span role="button" tabIndex="0" onClick={() => scrollToSection("hero")}>
+              DISAADE
+            </span>
           </div>
 
           <div
@@ -61,12 +62,12 @@ function Hero() {
             </li>
             <li>
               <a role="button" tabIndex="0" onClick={() => scrollToSection("team")}>
-                Notre - Équipe
+                Notre Équipe
               </a>
             </li>
             <li>
               <a role="button" tabIndex="0" onClick={() => scrollToSection("contact")}>
-                Contactez - Nous
+                Contactez-Nous
               </a>
             </li>
           </ul>
