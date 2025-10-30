@@ -1,6 +1,6 @@
 import React from 'react';
 import '../static/Applications.css';
-import '../assets/logo2.jpg';
+import logoImage from  '../assets/logo2.jpg';
 
 function Applications() {
   return (
