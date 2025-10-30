@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/site-vitrine-disaade/static/css/main.02240179.css",
+    "main.js": "/site-vitrine-disaade/static/js/main.aee86aaf.js",
+    "static/js/453.ae9baa64.chunk.js": "/site-vitrine-disaade/static/js/453.ae9baa64.chunk.js",
+    "static/media/incubator.png": "/site-vitrine-disaade/static/media/incubator.5177cdc44e1626866d62.png",
+    "static/media/diaoune.jpeg": "/site-vitrine-disaade/static/media/diaoune.b7943ddc16a1ef35887e.jpeg",
+    "static/media/josiane.jpg": "/site-vitrine-disaade/static/media/josiane.616e4f7a045baf31afe4.jpg",
+    "static/media/diallo.jpeg": "/site-vitrine-disaade/static/media/diallo.44d89322cb381d25f072.jpeg",
+    "static/media/cisse.jpeg": "/site-vitrine-disaade/static/media/cisse.6a554b69bbaa6625b68d.jpeg",
+    "static/media/incubateur1.png": "/site-vitrine-disaade/static/media/incubateur1.91bf0065d7d0f57a1706.png",
+    "static/media/kaba.jpeg": "/site-vitrine-disaade/static/media/kaba.38a5ea6b068b5dc06c8a.jpeg",
+    "static/media/team.jpg": "/site-vitrine-disaade/static/media/team.2ae5533e17f528f97b79.jpg",
+    "index.html": "/site-vitrine-disaade/index.html",
+    "main.02240179.css.map": "/site-vitrine-disaade/static/css/main.02240179.css.map",
+    "main.aee86aaf.js.map": "/site-vitrine-disaade/static/js/main.aee86aaf.js.map",
+    "453.ae9baa64.chunk.js.map": "/site-vitrine-disaade/static/js/453.ae9baa64.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.02240179.css",
+    "static/js/main.aee86aaf.js"
+  ]
+}
